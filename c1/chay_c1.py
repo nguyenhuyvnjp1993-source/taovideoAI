@@ -112,7 +112,8 @@ def kiem_tra_may(cfg, ket_qua):
     td = cfg["thu_muc_du_an_capcut"]
     kq["thu_muc_du_an_ton_tai"] = os.path.isdir(td)
     if kq["thu_muc_du_an_ton_tai"]:
-        kq["du_an"] = sorted(d for d in os.listdir(td) if os.path.isdir(os.path.join(td, d)))
+        kq["du_an"] = sorted(d for d in os.listdir(td)
+                             if os.path.isdir(os.path.join(td, d)) and not d.startswith("."))
         # Ghi thử 1 file rồi xóa
         p = os.path.join(td, "_c1_ghi_thu.txt")
         try:
