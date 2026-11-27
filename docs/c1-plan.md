@@ -52,7 +52,7 @@ Mỗi bài thử có kết quả **Đạt / Không đạt** và được ghi và
 | T5 | Đăng ký dự án | Nếu T4 dự án không hiện: thêm bước ghi vào `root_meta_info.json` (sao lưu file trước) | Dự án hiện sau khi mở lại CapCut |
 | T6 | Đường dẫn Windows | So sánh chạy script bằng Python Windows và chạy trong Cowork + đổi đường dẫn | Clip không báo “thiếu file” trong CapCut |
 | T7 | Chữ tiêu đề tiếng Việt | Thêm 1 dòng chữ có dấu (ví dụ “Đất nền 120m² – xã X, tỉnh Hưng Yên”) với font Be Vietnam Pro | Hiện đúng dấu, đúng font, sửa được trong CapCut |
-| T8 | Lớp phủ nền trong suốt | Dựng 1 clip đồ họa thử 3 giây (thẻ giá, chữ giả) bằng HTML → video có kênh trong suốt (WebM VP9 alpha và MOV ProRes 4444), đặt lên lớp phủ | Thấy video bên dưới, không bị nền đen |
+| T8 | Lớp phủ nền trong suốt | Dựng 1 clip đồ họa thử 3 giây: thẻ giá màu đặc, viền cứng, không bóng mềm, không màu xanh lá (theo `docs/motion.md`), chữ giả, trượt từ dưới lên 0,4 giây bằng HTML → video có kênh trong suốt (WebM VP9 alpha và MOV ProRes 4444), đặt lên lớp phủ | Thấy video bên dưới, không bị nền đen |
 | T9 | Dự phòng phông xanh | Cùng clip đồ họa trên nền xanh lá, file dự án tự bật xóa phông xanh | Nền xanh biến mất, kéo/xóa lớp phủ được |
 | T10 | Dự phòng MP4 | Từ cùng kế hoạch dựng của T4, FFmpeg xuất 1 MP4 bản nháp kèm file phụ đề `.srt` thử | MP4 phát được trên điện thoại, đúng 9:16 |
 | T11 | Độ bền | Mở dự án, sửa một chút, lưu, thoát, mở lại | Không báo hỏng, không mất clip |
