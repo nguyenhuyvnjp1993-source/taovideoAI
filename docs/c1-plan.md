@@ -1,6 +1,6 @@
 # Kế hoạch chặng C1: kiểm chứng CapCut 9.5 + pyCapCut 0.0.4 trên Windows
 
-Trạng thái: **chờ Huy duyệt**. Chưa viết code C1.
+Trạng thái: **đã chạy xong** (28/11/2026). Kết quả: [docs/c1-ketqua.md](c1-ketqua.md).
 
 ## 1. Mục tiêu của C1
 

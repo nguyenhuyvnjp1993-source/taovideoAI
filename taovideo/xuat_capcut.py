@@ -52,7 +52,7 @@ def xuat_capcut(kh: KeHoach, thu_muc_du_an: str, *, ghi_de: bool = True) -> str:
                 style=cc.TextStyle(size=9.0, bold=True, color=(1.0, 1.0, 1.0), align=1,
                                    auto_wrapping=True, max_line_width=0.8),
                 border=cc.TextBorder(color=(0.0, 0.0, 0.0), width=40.0),
-                clip_settings=cc.ClipSettings(transform_y=0.55),
+                clip_settings=cc.ClipSettings(transform_y=-0.45),  # âm = phía dưới; tránh 450px đáy (Reels/TikTok)
             ))
 
     script.save()
