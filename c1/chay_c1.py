@@ -83,14 +83,18 @@ def tao_clip_gia(thu_muc, so_luong=3):
     mau = ["0x1F3A93", "0x8E2C2C", "0x5A3E8C"]
     for i in range(1, so_luong + 1):
         p = os.path.join(thu_muc, f"clip{i}.mp4")
-        if os.path.exists(p):
+        if os.path.exists(p) and os.path.getsize(p) > 0:
             continue
+        tam = p + ".dang-tao.mp4"   # ghi ra file tạm, xong mới đổi tên, để lỗi không để lại file rỗng
+        # Thanh trắng chạy ngang phía trên để dễ thấy đoạn cắt (overlay, chạy được trên FFmpeg 9.x)
         subprocess.run([
             "ffmpeg", "-y", "-v", "error",
             "-f", "lavfi", "-i", f"color=c={mau[i - 1]}:s=1080x1920:r=30:d=8",
+            "-f", "lavfi", "-i", "color=c=white:s=1080x60:r=30:d=8",
             "-f", "lavfi", "-i", f"sine=frequency={300 + 100 * i}:duration=8",
-            "-vf", f"drawbox=x=0:y=0:w=iw*t/8:h=60:color=white:t=fill",
-            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", p], check=True)
+            "-filter_complex", "[0][1]overlay=x='-w+w*t/8':y=0[v]", "-map", "[v]", "-map", "2",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", tam], check=True)
+        os.replace(tam, p)
         print(f"   Tạo clip thử: {p}")
 
 
