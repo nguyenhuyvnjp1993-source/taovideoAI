@@ -138,11 +138,21 @@ Rủi ro lớn nhất là CapCut đổi định dạng file dự án. Quy trình
 
 Mỗi phiên làm một chặng, lên kế hoạch trước và chờ Huy duyệt. C1 chạy trên máy Huy vì máy đã đủ cấu hình; C7 mới chuyển sang máy chị.
 
-[embedded content: 7 chặng · 1 điểm quyết định sau C1]
+| Chặng | Nội dung |
+| --- | --- |
+| C1 | Thử trên máy bạn: bản CapCut, một file dự án có 3 clip và 1 dòng chữ, và thử clip nền trong suốt hoặc nền xanh |
+| C2 | Phiếu thông tin, 2 mẫu kịch bản, danh sách cảnh, luật cấm |
+| C3 | Cắt video theo cảnh và lời nói, xuất 1 video dài |
+| C4 | Tách video ngắn, thêm chữ, nhạc và câu kết |
+| C5 | Bộ nhận diện và 5 mẫu đồ họa chuyển động |
+| C6 | Bản MP4 dự phòng, đóng gói Skill, hướng dẫn cho chị, bảng Sheet |
+| C7 | Chuyển sang máy chị và chạy thử một căn thật |
 
-> **Thiếu nội dung:** bảng “7 chặng · 1 điểm quyết định sau C1” bị nhúng (embedded) khi xuất tài liệu nên không có trong file này. Chi tiết và tiêu chí nghiệm thu của C2–C7 hiện **chưa có**; Claude không tự điền. Huy cần dán lại bảng này trước khi bắt đầu C2. Kế hoạch C1 xem [docs/c1-plan.md](c1-plan.md).
+> Bảng trên do Huy dán lại ngày 27/11/2026 (bản xuất gốc bị mất bảng này). Tiêu chí nghiệm thu riêng của từng chặng C2–C7 chưa có; sẽ đề xuất khi lập kế hoạch chặng đó. Kế hoạch C1 xem [docs/c1-plan.md](c1-plan.md).
 
-Nếu C1 không mở được file dự án trên CapCut 9.5, dự án chuyển hẳn sang xuất MP4 trước khi tốn công làm các chặng sau. Tiêu chí nghiệm thu là đề xuất, Huy sửa trực tiếp nếu muốn.
+**Điểm quyết định sau C1 (Huy chốt 27/11/2026):** thử với các bản CapCut hiện có. Nếu sau 2 ngày thử không tìm ra cách để CapCut mở được file dự án, chuyển sang xuất MP4.
+
+Nếu C1 không mở được file dự án trên bản CapCut nào (hạn 2 ngày thử), dự án chuyển hẳn sang xuất MP4 trước khi tốn công làm các chặng sau. Tiêu chí nghiệm thu là đề xuất, Huy sửa trực tiếp nếu muốn.
 
 ## Việc Huy chuẩn bị và CLAUDE.md mẫu
 

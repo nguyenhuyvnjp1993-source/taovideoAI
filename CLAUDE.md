@@ -11,6 +11,7 @@
 
 ## Luật cố định
 - CapCut bản máy tính 9.5 trên Windows, pyCapCut 0.0.4. Không nâng bản khi chưa được Huy duyệt.
+- Riêng C1: Huy duyệt thử cả các bản CapCut đang có trên máy (27/11/2026), hạn 2 ngày, không được thì chuyển MP4.
 - Lớp lõi (kế hoạch dựng) tách khỏi lớp xuất (CapCut JSON / MP4 FFmpeg).
 - Đồ họa và kịch bản chỉ dùng con số trong phiếu thông tin. Không tự bịa.
 - Tuân thủ mục “Luật nội dung và pháp lý” trong docs/brief.md.
