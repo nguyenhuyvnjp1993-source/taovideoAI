@@ -30,4 +30,5 @@ copy config.example.json config.json   (rồi sửa đường dẫn trong config
 | Chặng | Trạng thái |
 | --- | --- |
 | C1: Kiểm chứng CapCut + pyCapCut | **Xong**, CapCut 9.9 dùng được. Xem [docs/c1-ketqua.md](docs/c1-ketqua.md) |
-| C2–C7 | Chưa bắt đầu |
+| C2: Phiếu thông tin, kịch bản, danh sách cảnh, luật cấm | Đang chờ duyệt kế hoạch: [docs/c2-plan.md](docs/c2-plan.md) |
+| C3–C7 | Chưa bắt đầu |

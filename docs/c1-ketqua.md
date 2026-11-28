@@ -41,7 +41,7 @@ Ngày chạy: 28/11/2026 (giờ Nhật), trên máy Windows của Huy (DESKTOP-6
 
 ## Lưu ý cho các chặng sau
 
-1. **Khóa bản CapCut:** máy đang bật kênh beta (`joinBeta=true`) và tự tải 9.9 về mà không hỏi. Nên tắt beta và chặn cập nhật, vì brief ghi bản 10.x báo file do code tạo là hỏng.
+1. **Khóa bản CapCut:** ngày 28/11/2026, theo yêu cầu của Huy, Claude đã tắt "Dùng thử phiên bản beta" (Menu cài đặt → Phiên bản) và chuyển "Cập nhật phần mềm" từ *Cập nhật tự động* sang *Nhận thông báo về bản cập nhật* (Cài đặt → Chung). Khi CapCut báo có bản mới, **không bấm cập nhật** cho tới khi thử lại bằng `c1/chay_c1.py`, vì brief ghi bản 10.x báo file do code tạo là hỏng.
 2. **Lớp phủ dùng MOV ProRes 4444.** File khá nặng (khoảng 7 MB mỗi giây ở 1080×1920). Nếu dung lượng thành vấn đề thì chuyển sang nền xanh lá.
 3. **Phải thoát hẳn CapCut trước khi script ghi dự án.** Lúc CapCut chạy, nó tự ghi lại `root_meta_info.json`.
 4. Dự án mới hiện `00:00` trong danh sách cho tới lần mở đầu tiên; mở ra là CapCut tự cập nhật.
