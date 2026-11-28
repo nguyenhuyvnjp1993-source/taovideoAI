@@ -1,0 +1,18 @@
+{
+  "ten": "C1",
+  "rong": 1080,
+  "cao": 1920,
+  "fps": 30,
+  "clips": [
+    {"file": "clip1.mp4", "tu": 0.5, "den": 4.5},
+    {"file": "clip2.mp4", "tu": 0.5, "den": 4.5},
+    {"file": "clip3.mp4", "tu": 0.5, "den": 4.5}
+  ],
+  "chu": [
+    {"noi_dung": "Đất nền 120m² – xã X, tỉnh Hưng Yên (Thái Bình cũ)", "bat_dau": 0.5, "do_dai": 3.0}
+  ],
+  "lop_phu": [
+    {"file": "c1/assets/the_gia_alpha.webm", "bat_dau": 4.0, "do_dai": 3.0, "kieu": "trong_suot"},
+    {"file": "c1/assets/the_gia_xanh.mp4", "bat_dau": 4.0, "do_dai": 3.0, "kieu": "phong_xanh"}
+  ]
+}

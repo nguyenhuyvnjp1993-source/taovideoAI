@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<style>
+  /* Thẻ thử C1: màu đặc, viền cứng, không bóng mềm, không màu xanh lá (docs/motion.md) */
+  html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden;font-family:"Be Vietnam Pro","Segoe UI",Arial,sans-serif}
+  .the{position:absolute;left:80px;width:820px;top:1160px;  /* tránh 450px dưới và dải phải */
+       background:#1F3A93;border:8px solid #FFFFFF;border-radius:0;color:#fff;padding:36px 44px;box-sizing:border-box;
+       animation:vao .4s cubic-bezier(.2,.8,.2,1) both, ra .25s ease-in 2.75s forwards}
+  .nhan{font-size:44px;font-weight:600;opacity:.9}
+  .gia{font-size:110px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
+  .dt{font-size:56px;font-weight:600;background:#F2A900;color:#111;display:inline-block;padding:6px 18px;margin-top:12px;
+      animation:vao .4s cubic-bezier(.2,.8,.2,1) .2s both}
+  @keyframes vao{from{transform:translateY(160px);opacity:0}to{transform:none;opacity:1}}
+  @keyframes ra{to{transform:translateY(160px);opacity:0}}
+</style></head>
+<body>
+  <div class="the">
+    <div class="nhan">GIÁ THỬ NGHIỆM (SỐ GIẢ)</div>
+    <div class="gia" id="gia">0</div>
+    <div class="dt">120 m² · mặt tiền 5 m</div>
+  </div>
+<script>
+  // Số chạy từ 0 lên trong 0,8 giây, chậm dần. Số giả, chỉ để thử C1.
+  const DICH = 1250, el = document.getElementById('gia');
+  window.datThoiGian = (t) => {
+    document.getAnimations().forEach(a => { a.pause(); a.currentTime = t * 1000; });
+    const p = Math.min(Math.max((t - 0.3) / 0.8, 0), 1), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(DICH * e).toLocaleString('vi-VN') + ' triệu';
+  };
+  window.datThoiGian(0);
+</script>
+</body></html>
